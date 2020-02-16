@@ -1,6 +1,6 @@
 {
-  "name": "with-tailwindcss",
-  "version": "1.0.0",
+  "name": "mark-starkman-resume",
+  "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next",
