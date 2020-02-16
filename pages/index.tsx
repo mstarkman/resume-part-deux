@@ -1,11 +1,16 @@
-import Nav from "../components/nav"
+import SideNav from "../components/SideNav"
+import Summary from "../components/Summary"
+import TopNav from "../components/TopNav"
+import Experience from "../components/Experience"
+import Education from "../components/Education"
 
 const Index = () => (
   <div>
-    <Nav />
-    <div className="hero">
-      <h1 className="title">Next.js + Tailwind CSS</h1>
-    </div>
+    <TopNav />
+    <SideNav />
+    <Summary />
+    <Experience />
+    <Education />
   </div>
 )
 
