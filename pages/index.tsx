@@ -1,6 +1,6 @@
-import Nav from '../components/nav'
+import Nav from "../components/nav"
 
-export default () => (
+const Index = () => (
   <div>
     <Nav />
     <div className="hero">
@@ -8,3 +8,5 @@ export default () => (
     </div>
   </div>
 )
+
+export default Index
