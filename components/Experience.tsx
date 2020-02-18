@@ -1,10 +1,13 @@
-import experience from "../data/experience"
+import experiences from "../data/experiences"
+import Details from "./Details"
+import Section from "./Section"
 
 const Experience = () => (
-  <>
-    <h2>Experience</h2>
-    <p dangerouslySetInnerHTML={{ __html: experience }}></p>
-  </>
+  <Section title="Experience">
+    {experiences.map((experience, i) => (
+      <Details key={i} {...experience} />
+    ))}
+  </Section>
 )
 
 export default Experience

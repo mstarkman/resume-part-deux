@@ -1,10 +1,11 @@
 import education from "../data/education"
+import Details from "./Details"
+import Section from "./Section"
 
 const Education = () => (
-  <>
-    <h2>Education</h2>
-    <p>{education}</p>
-  </>
+  <Section title="Education">
+    <Details {...education} />
+  </Section>
 )
 
 export default Education

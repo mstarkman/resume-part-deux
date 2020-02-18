@@ -1,10 +1,14 @@
-import summary from "../data/summary"
+import summaries from "../data/summaries"
+import Section from "./Section"
 
 const Summary = () => (
-  <>
-    <h2>Summary</h2>
-    <p>{summary}</p>
-  </>
+  <Section title="Summary">
+    {summaries.map((summary, i) => (
+      <p className="mb-5" key={i}>
+        {summary}
+      </p>
+    ))}
+  </Section>
 )
 
 export default Summary
