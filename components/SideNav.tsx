@@ -38,7 +38,7 @@ const links = [
 ]
 
 const SideNav = () => (
-  <nav className="bg-purple-700 text-yellow-100 h-screen pt-4 flex flex-col">
+  <nav className="bg-purple-700 text-yellow-100 h-screen py-4 flex flex-col">
     <div className="text-right font-serif text-4xl mb-4 px-6">
       Mark
       <br />
