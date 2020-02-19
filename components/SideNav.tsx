@@ -1,5 +1,5 @@
 import { faEnvelope, faPhone, faFilePdf, faFileWord } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import SideNavLink from "./SideNavLink"
 
 const links = [
@@ -38,7 +38,7 @@ const links = [
 ]
 
 const SideNav = () => (
-  <nav className="bg-purple-700 text-yellow-100 h-screen pt-4">
+  <nav className="bg-purple-700 text-yellow-100 h-screen pt-4 flex flex-col">
     <div className="text-right font-serif text-4xl mb-4 px-6">
       Mark
       <br />
@@ -48,6 +48,14 @@ const SideNav = () => (
       {links.map((link, i) => (
         <SideNavLink key={i} {...link} />
       ))}
+    </div>
+    <div className="text-right mt-auto">
+      <SideNavLink
+        href="https://github.com/mstarkman/resume-part-deux"
+        icon={faGithubSquare}
+        text="Wanna see the code?"
+        newTab={true}
+      />
     </div>
   </nav>
 )
