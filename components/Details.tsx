@@ -14,14 +14,16 @@ const renderBullets = (bullets: string[] = []) => {
   return (
     <ul className="list-disc ml-6">
       {bullets.map((bullet, i) => (
-        <li key={i}>{bullet}</li>
+        <li className="mb-2" key={i}>
+          {bullet}
+        </li>
       ))}
     </ul>
   )
 }
 
 const Details: FunctionComponent<Props> = ({ title, dates, place, location, bullets }) => (
-  <div className="mb-6">
+  <div className="mb-10 p-2">
     <div className="flex justify-between mb-3">
       <div className="flex-col">
         <div className="text-xl font-bold">{title}</div>

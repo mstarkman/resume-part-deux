@@ -6,7 +6,7 @@ interface Props {
 
 const Section: FunctionComponent<Props> = ({ title, children }) => (
   <div className="mb-8">
-    <h2 className="font-serif mb-4 text-3xl">{title}</h2>
+    <h2 className="font-serif pb-1 mb-4 text-3xl border-b border-b-solid border-gray-500">{title}</h2>
     {children}
   </div>
 )
