@@ -2,7 +2,7 @@ import { faEnvelope, faPhone, faFilePdf, faFileWord } from "@fortawesome/free-so
 import { faGithub, faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import SideNavLink from "./SideNavLink"
 
-const links = [
+const navLinks = [
   {
     href: "mailto:me@markstarkman.com?subject=Let's%20chat%20about%20your%20resume!",
     icon: faEnvelope,
@@ -37,6 +37,13 @@ const links = [
   }
 ]
 
+const navLinkRepo = {
+  href: "https://github.com/mstarkman/resume-part-deux",
+  icon: faGithubSquare,
+  text: "Wanna see the code?",
+  newTab: true
+}
+
 const SideNav = () => (
   <nav className="bg-purple-700 text-yellow-100 h-screen py-4 flex flex-col">
     <div className="text-right font-serif text-4xl mb-4 px-6">
@@ -45,19 +52,16 @@ const SideNav = () => (
       Starkman
     </div>
     <div className="text-right">
-      {links.map((link, i) => (
+      {navLinks.map((link, i) => (
         <SideNavLink key={i} {...link} />
       ))}
     </div>
     <div className="text-right mt-auto">
-      <SideNavLink
-        href="https://github.com/mstarkman/resume-part-deux"
-        icon={faGithubSquare}
-        text="Wanna see the code?"
-        newTab={true}
-      />
+      <SideNavLink {...navLinkRepo} />
     </div>
   </nav>
 )
 
 export default SideNav
+
+export { navLinks, navLinkRepo }

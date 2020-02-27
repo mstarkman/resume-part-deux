@@ -24,14 +24,14 @@ const renderBullets = (bullets: string[] = []) => {
 
 const Details: FunctionComponent<Props> = ({ title, dates, place, location, bullets }) => (
   <div className="mb-10 p-2">
-    <div className="flex justify-between mb-3">
+    <div className="flex flex-col md:flex-row md:justify-between mb-3">
       <div className="flex-col">
         <div className="text-xl font-bold">{title}</div>
         <div>{place}</div>
       </div>
       <div className="flex-col">
-        <div className="text-right">{dates}</div>
-        <div className="text-right">{location}</div>
+        <div className="md:text-right">{dates}</div>
+        <div className="md:text-right">{location}</div>
       </div>
     </div>
     {renderBullets(bullets)}
