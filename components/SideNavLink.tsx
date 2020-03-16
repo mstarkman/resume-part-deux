@@ -10,7 +10,7 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 const SideNavLink: FunctionComponent<Props> = ({ text, icon, newTab = false, ...props }) => (
   <a
-    className="hover:bg-yellow-300 hover:text-purple-700 w-full inline-block px-3 lg:px-6 py-2"
+    className="text-sm xl:text-base hover:bg-yellow-300 hover:text-purple-700 w-full inline-block px-3 lg:px-6 py-2"
     {...props}
     target={newTab ? "_blank" : null}
   >
