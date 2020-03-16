@@ -6,17 +6,28 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
   icon: IconDefinition
   text: string
   newTab?: boolean
+  beforeNav?: () => void
 }
 
-const SideNavLink: FunctionComponent<Props> = ({ text, icon, newTab = false, ...props }) => (
-  <a
-    className="text-sm xl:text-base hover:bg-yellow-300 hover:text-purple-700 w-full inline-block px-3 lg:px-6 py-1 md:py-2"
-    {...props}
-    target={newTab ? "_blank" : null}
-  >
-    <FontAwesomeIcon className="mr-2" icon={icon} />
-    {text}
-  </a>
-)
+const SideNavLink: FunctionComponent<Props> = ({ text, icon, beforeNav, href, newTab = false, ...props }) => {
+  const handleClick = e => {
+    if (beforeNav) {
+      beforeNav()
+    }
+  }
+
+  return (
+    <a
+      className="text-sm xl:text-base hover:bg-yellow-300 hover:text-purple-700 w-full inline-block px-3 lg:px-6 py-1 md:py-2"
+      {...props}
+      target={newTab ? "_blank" : null}
+      href={href}
+      onClick={handleClick}
+    >
+      <FontAwesomeIcon className="mr-2" icon={icon} />
+      {text}
+    </a>
+  )
+}
 
 export default SideNavLink

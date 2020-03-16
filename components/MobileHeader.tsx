@@ -9,6 +9,10 @@ const MobileHeader = () => {
     navShown ? setNavShown(false) : setNavShown(true)
   }
 
+  const closeNav = () => {
+    setNavShown(false)
+  }
+
   return (
     <div className="md:hidden bg-purple-700 text-yellow-100 fixed w-full px-5 py-4">
       <div className="flex justify-between">
@@ -24,9 +28,9 @@ const MobileHeader = () => {
       {navShown ? (
         <div className="md:hidden bg-purple-700 mt-4 pt-2 border-t border-yellow-100">
           {navLinks.map((link, i) => (
-            <SideNavLink key={i} {...link} />
+            <SideNavLink key={i} {...link} beforeNav={closeNav} />
           ))}
-          <SideNavLink {...navLinkRepo} />
+          <SideNavLink {...navLinkRepo} beforeNav={closeNav} />
         </div>
       ) : null}
     </div>
