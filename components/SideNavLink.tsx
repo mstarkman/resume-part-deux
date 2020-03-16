@@ -10,6 +10,7 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const SideNavLink: FunctionComponent<Props> = ({ text, icon, beforeNav, href, newTab = false, ...props }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleClick = e => {
     if (beforeNav) {
       beforeNav()
