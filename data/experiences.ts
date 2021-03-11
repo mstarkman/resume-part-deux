@@ -1,5 +1,16 @@
 const experiences = [
   {
+    title: "Site Reliability Engineer",
+    dates: "March 2020 - Present",
+    place: "FireHydrant",
+    location: "Remote",
+    bullets: [
+      "Helped to build the initial SRE practice at FireHydrant by building out observability within our main application which is built with Ruby on Rails and PostgreSQL.  We used Datadog as our main observability platform.",
+      "Worked with product and leadership teams to build out the most appropriate service level objectives for the stage of our product.  Then worked with the engineering teams to implement changes in the code and our Kubernetes configuration to improve to meet the SLO's.",
+      "Embedded myself with different engineering teams and projects to make sure they were incorporating best practices for logging, error management and communicating with 3rd-party APIs."
+    ]
+  },
+  {
     title: "Senior Staff Scientist",
     dates: "October 2017 - Present",
     place: "SaneBox",

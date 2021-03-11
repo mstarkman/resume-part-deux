@@ -26,12 +26,12 @@ const navLinks = [
     newTab: true
   },
   {
-    href: "/downloads/Mark%20Starkman%20Resume%202020.pdf",
+    href: "/downloads/Mark%20Starkman%20Resume%202021.pdf",
     icon: faFilePdf,
     text: "Resume PDF Format"
   },
   {
-    href: "/downloads/Mark%20Starkman%20Resume%202020.docx",
+    href: "/downloads/Mark%20Starkman%20Resume%202021.docx",
     icon: faFileWord,
     text: "Resume Microsoft Word Format"
   }
