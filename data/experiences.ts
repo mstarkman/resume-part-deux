@@ -1,6 +1,6 @@
 const experiences = [
   {
-    title: "Site Reliability Engineer",
+    title: "Senior Software Engineer / Site Reliability Engineer",
     dates: "March 2020 - Present",
     place: "FireHydrant",
     location: "Remote",
