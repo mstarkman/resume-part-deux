@@ -6,7 +6,8 @@ const experiences = [
     location: "Remote",
     bullets: [
       "Helped to build the initial SRE practice at FireHydrant by building out observability within our main application which is built with Ruby on Rails and PostgreSQL.  We used Datadog as our main observability platform.",
-      "Worked with product and leadership teams to build out the most appropriate service level objectives for the stage of our product.  Then worked with the engineering teams to implement changes in the code and our Kubernetes configuration to improve to meet the SLO's.",
+      "Improved the engineer experience by enhancing the Docker/Docker Compose development environment by making it more configurable and making better use of Make.",
+      "Implemented new features and bug fixes at all levels of the development stack including Ruby on Rails, PostgreSQL, React and HTML/CSS.  This also included performance tuning of long running queries and N+1 queries that were pervasive throughout the system.",
       "Embedded myself with different engineering teams and projects to make sure they were incorporating best practices for logging, error management and communicating with 3rd-party APIs."
     ]
   },
