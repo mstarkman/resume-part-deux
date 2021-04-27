@@ -1,7 +1,14 @@
 const experiences = [
   {
     title: "Site Reliability Engineer",
-    dates: "March 2020 - Present",
+    dates: "April 2021 - Present",
+    place: "Avochato",
+    location: "Remote",
+    bullets: []
+  },
+  {
+    title: "Site Reliability Engineer",
+    dates: "March 2020 - March 2021",
     place: "FireHydrant",
     location: "Remote",
     bullets: [
