@@ -4,7 +4,11 @@ const experiences = [
     dates: "April 2021 - Present",
     place: "Avochato",
     location: "Remote",
-    bullets: []
+    bullets: [
+      "Automated the generation of our Amazon AMI’s that are used to deploy the application AWS Elastic Beanstalk.  This was done to ensure that we kept our servers up to date for SOC2 compliance.",
+      "Lead all technical aspects of implementing Looker and an ETL solution to consolidate all data from disparate sources into a new data warehouse that was hosted Amazon Aurora PostgreSQL.",
+      "Updated the Rails version of our application from Rails 5.2.x to Rails 6.0.x.  Implemented automatic database switching to always read from our Amazon Aurora PostgreSQL reader replica."
+    ]
   },
   {
     title: "Site Reliability Engineer",
